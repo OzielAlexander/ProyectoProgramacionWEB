@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boton</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Boton</h1>
+        <button id="theme-toggle">🌓</button>
+        
+    </header>
+    
+    <button class="open-nav">☰</button>
+    
+    <nav class="sidenav">
+        <button class="close-nav"></button> <!-- Cambié la 'X' por una flecha -->
+        <ul>        
+         <!-- LISTA -->
+        <li><a class="active" href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/PaginaNew.html">Inicio</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina1/PaginaEnlace.html">1. Enlace</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina2/PaginaParrafo.html">2. Parrafo</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina3/PaginaEncabezados.html">3. Encabezados</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina4/PaginaDivision.html">4. Division</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina5/PaginaElementoEnLinea.html">5. Elemento en linea</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina6/PaginaImagen.html">6. Imagen</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina7/PaginaListaDesordenada.html">7. Lista desordenada</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina8/PaginaListaOrdenada.html">8. Lista ordenada</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina9/PaginaTabla.html">9. Tabla</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina10/PaginaElementoDeLista.html">10. Elemento de lista</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina11/PaginaFilaDeTabla.html">11. Fila de tabla</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina12/PaginaEncabezadoDeTabla.html">12. Encabezado de tabla</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina13/PaginaCeldaDeTabla.html">13. Celda de tabla</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina14/PaginaFormulario.html">14. Formulario</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina15/PaginaCampoDeEntrada.html">15. Campo de entrada</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina16/PaginaBoton.html">16. Boton</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina17/PaginaEtiquetaDeFormuario.html">17. Etiqueta de formulario</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina18/PaginaAreaDeTexto.html">18. Area de texto</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina19/PaginaListaDesplegable.html">19. Lista desplegable</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina20/PaginaOpcionDeListaDeplegable.html">20. Opcion de lista desplegable</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <h2>¿Para que sirve un boton?</h2>
+        <p>Un botón en HTML se utiliza para permitir la interacción del usuario con una página web, ya sea para enviar un formulario, ejecutar un script o realizar una acción en el lado del cliente o servidor. Los botones se definen principalmente con el elemento &lt;button&gt;, aunque también puede usarse &lt;input type="button"&gt;. El botón puede tener diferentes comportamientos dependiendo del contexto y de los atributos que se le asignen.</p>
+
+        <h2>type</h2>
+        <p>Define el comportamiento del botón. Los valores posibles son:
+            <br>
+            <br>
+            submit: Envía el formulario. Es el valor predeterminado.
+            <br>
+            <br>
+            reset: Reinicia todos los campos del formulario a sus valores iniciales.
+            <br>
+            <br>
+            button: Se utiliza para botones sin comportamiento predeterminado, típicamente controlados mediante JavaScript.</p>
+        <img src="img1.png" alt="ejemplo2">
+
+        <h2>name</h2>
+        <p>Asigna un nombre al botón que puede ser útil cuando se envían los datos del formulario. Si el botón está en un formulario, este nombre y su valor se enviarán al servidor.</p>
+        <img src="img2.png" alt="ejemplo2">
+
+        <h2>value</h2>
+        <p>Define un valor para el botón que se envía junto con los datos del formulario cuando se hace clic en él (solo en botones de tipo submit o reset).</p>
+        <img src="img3.png" alt="ejemplo2">
+
+        <h2>disabled</h2>
+        <p>Desactiva el botón, lo que impide que el usuario lo haga clic. Un botón deshabilitado no puede recibir eventos de usuario.</p>
+        <img src="img4.png" alt="ejemplo2">
+
+        <h2>autofocus</h2>
+        <p>Este atributo permite que el botón reciba el foco automáticamente cuando la página se carga. Solo puede haber un elemento con autofocus por página.</p>
+        <img src="img5.png" alt="ejemplo2">
+
+        <h2>form</h2>
+        <p>Relaciona el botón con un formulario diferente al que se encuentra. Esto es útil cuando el botón está fuera de la etiqueta &lt;form&gt;, pero necesita estar vinculado a un formulario específico.</p>
+        <img src="img6.png" alt="ejemplo2">
+
+        <h2>formaction</h2>
+        <p>Especifica una URL diferente donde se enviará el formulario cuando se haga clic en el botón. Este atributo solo es aplicable si el botón es de tipo submit.</p>
+        <img src="img7.png" alt="ejemplo2">
+
+        <h2>formenctype</h2>
+        <p>Define cómo deben codificarse los datos del formulario al enviarlo, cuando se usa el botón. Esto es útil para formularios que requieren la subida de archivos, y es válido solo cuando el botón es de tipo submit.</p>
+        <img src="img8.png" alt="ejemplo2">
+
+        <h2>formmethod</h2>
+        <p>Define el método HTTP a utilizar cuando se envían los datos del formulario desde el botón. Solo aplica a botones de tipo submit. Los valores comunes son:
+            <br>
+            <br>
+            GET: Envía los datos como parte de la URL.
+            <br>
+            <br>
+            POST: Envía los datos como cuerpo de la solicitud HTTP.</p>
+        <img src="img9.png" alt="ejemplo2">
+
+        <h2>formtarget</h2>
+        <p>Define en qué ventana o marco se abrirá la respuesta del formulario cuando se envía desde este botón. Los valores posibles son:
+            <br>
+            <br>
+            _self: En la misma ventana (valor por defecto).
+            <br>
+            <br>
+            _blank: En una nueva pestaña o ventana.
+            <br>
+            <br>
+            _parent: En el marco padre si la página está en un marco.
+            <br>
+            <br>
+            _top: En la ventana completa, eliminando cualquier marco.</p>
+        <img src="img10.png" alt="ejemplo2">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

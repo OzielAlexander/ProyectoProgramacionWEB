@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encabezados De Tabla</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Encabezados De Tabla</h1>
+        <button id="theme-toggle">🌓</button>
+        
+    </header>
+    
+    <button class="open-nav">☰</button>
+    
+    <nav class="sidenav">
+        <button class="close-nav"></button> <!-- Cambié la 'X' por una flecha -->
+        <ul>        
+         <!-- LISTA -->
+        <li><a class="active" href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/PaginaNew.html">Inicio</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina1/PaginaEnlace.html">1. Enlace</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina2/PaginaParrafo.html">2. Parrafo</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina3/PaginaEncabezados.html">3. Encabezados</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina4/PaginaDivision.html">4. Division</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina5/PaginaElementoEnLinea.html">5. Elemento en linea</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina6/PaginaImagen.html">6. Imagen</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina7/PaginaListaDesordenada.html">7. Lista desordenada</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina8/PaginaListaOrdenada.html">8. Lista ordenada</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina9/PaginaTabla.html">9. Tabla</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina10/PaginaElementoDeLista.html">10. Elemento de lista</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina11/PaginaFilaDeTabla.html">11. Fila de tabla</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina12/PaginaEncabezadoDeTabla.html">12. Encabezado de tabla</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina13/PaginaCeldaDeTabla.html">13. Celda de tabla</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina14/PaginaFormulario.html">14. Formulario</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina15/PaginaCampoDeEntrada.html">15. Campo de entrada</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina16/PaginaBoton.html">16. Boton</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina17/PaginaEtiquetaDeFormuario.html">17. Etiqueta de formulario</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina18/PaginaAreaDeTexto.html">18. Area de texto</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina19/PaginaListaDesplegable.html">19. Lista desplegable</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina20/PaginaOpcionDeListaDeplegable.html">20. Opcion de lista desplegable</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <h2>¿Para que sirve un encabezado de tabla?</h2>
+        <p>El encabezado de una tabla en HTML es fundamental para proporcionar contexto sobre el contenido de cada columna en la tabla. Este encabezado se define usando el elemento &lt;th&gt;, que significa "table header" (encabezado de tabla). Normalmente, el texto dentro de un &lt;th&gt; se muestra en negrita y centrado de forma predeterminada por los navegadores.</p>
+
+        <h2>colspan</h2>
+        <p>Indica cuántas columnas debe abarcar la celda del encabezado.</p>
+        <img src="img1.png" alt="ejemplo2">
+
+        <h2>rowspan</h2>
+        <p>Indica cuántas filas debe abarcar la celda del encabezado.</p>
+        <img src="img2.png" alt="ejemplo2">
+
+        <h2>headers</h2>
+        <p>Este atributo se utiliza para establecer una relación explícita entre una celda de datos (&lt;td&gt;) y un encabezado en tablas más complejas. Debes darle un identificador (id) al encabezado y luego referenciarlo desde las celdas de datos correspondientes.</p>
+        <img src="img3.png" alt="ejemplo2">
+
+        <h2>scope</h2>
+        <p>Define el alcance del encabezado, lo que facilita la accesibilidad de la tabla para tecnologías de asistencia como los lectores de pantalla. 
+           Los valores permitidos son:
+            <br>
+            <br>
+            col: El encabezado se aplica a una columna.
+            <br>
+            <br>
+            row: El encabezado se aplica a una fila.
+            <br>
+            <br>
+            colgroup: Se aplica a un grupo de columnas.
+            <br>
+            <br>
+            rowgroup: Se aplica a un grupo de filas.
+        </p>
+        <img src="img4.png" alt="ejemplo2">
+
+        <h2>abbr</h2>
+        <p>Proporciona una versión abreviada del contenido del encabezado, útil para dispositivos de asistencia.</p>
+        <img src="img5.png" alt="ejemplo2">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+:root {
+    --primary-color: #94541c;
+    --secondary-color: #db9c46;
+    --background-color: #f5f1e3;
+    --text-color: #553317;
+    --header-height: 70px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header h1 {
+    margin: 0;
+    
+    font-weight: 700;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.sidenav {
+    background-color: var(--secondary-color);
+    position: fixed;
+    top: var(--header-height);
+    left: -300px;
+    height: calc(100% - var(--header-height));
+    width: 300px;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.sidenav.open {
+    left: 0;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav li a {
+    display: block;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+}
+
+.sidenav li a.active,
+.sidenav li a:hover {
+    background-color: var(--primary-color);
+}
+
+.close-nav, .open-nav {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Estilo del botón close-nav para que esté fuera de la lista */
+.close-nav {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white; /* Asegúrate de que el color contraste con el fondo */
+    font-size: 1.5em; /* Asegúrate de que sea lo suficientemente grande */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+
+.open-nav {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1001;
+    color: white;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.main-content {
+    margin-left: 0;
+    margin-top: calc(var(--header-height) + 20px); /* Agregué margen superior para evitar solapamiento */
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+h2, h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+p, li {
+    line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+    .sidenav {
+        left: 0;
+    }
+    
+    .open-nav {
+        display: none;
+    }
+    .main-content {
+        margin-left: 300px;
+    }
+}
+
+/* Tema oscuro */
+body.dark-theme {
+    --background-color: #2c2c2c;
+    --text-color: #e0e0e0;
+}
+
+body.dark-theme .page-header {
+    background-color: #1a1a1a;
+}
+
+body.dark-theme .sidenav {
+    background-color: #3a3a3a;
+}
+
+body.dark-theme .main-content {
+    background-color: #2c2c2c;
+}
+
+body.dark-theme h2, 
+body.dark-theme h3 {
+    color: var(--secondary-color);
+}
