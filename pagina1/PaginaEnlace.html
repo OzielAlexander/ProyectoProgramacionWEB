@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Enlace</h1>
+        <button id="theme-toggle">🌓</button>
+        
+    </header>
+    
+    <button class="open-nav">☰</button>
+    
+    <nav class="sidenav">
+        <button class="close-nav"></button> <!-- Cambié la 'X' por una flecha -->
+        <ul>        
+         <!-- LISTA -->
+        <li><a class="active" href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/PaginaNew.html">Inicio</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina1/PaginaEnlace.html">1. Enlace</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina2/PaginaParrafo.html">2. Parrafo</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina3/PaginaEncabezados.html">3. Encabezados</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina4/PaginaDivision.html">4. Division</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina5/PaginaElementoEnLinea.html">5. Elemento en linea</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina6/PaginaImagen.html">6. Imagen</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina7/PaginaListaDesordenada.html">7. Lista desordenada</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina8/PaginaListaOrdenada.html">8. Lista ordenada</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina9/PaginaTabla.html">9. Tabla</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina10/PaginaElementoDeLista.html">10. Elemento de lista</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina11/PaginaFilaDeTabla.html">11. Fila de tabla</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina12/PaginaEncabezadoDeTabla.html">12. Encabezado de tabla</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina13/PaginaCeldaDeTabla.html">13. Celda de tabla</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina14/PaginaFormulario.html">14. Formulario</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina15/PaginaCampoDeEntrada.html">15. Campo de entrada</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina16/PaginaBoton.html">16. Boton</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina17/PaginaEtiquetaDeFormuario.html">17. Etiqueta de formulario</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina18/PaginaAreaDeTexto.html">18. Area de texto</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina19/PaginaListaDesplegable.html">19. Lista desplegable</a></li>
+        <li><a href="file:///C:/Users/oziel/OneDrive/Escritorio/Proyecto%20nuevo/pagina20/PaginaOpcionDeListaDeplegable.html">20. Opcion de lista desplegable</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <h2>¿Para que es utilizado?</h2>
+        <p>El elemento &lt;a&gt; en HTML es utilizado para crear enlaces, permitiendo a los usuarios navegar entre diferentes páginas o recursos, como archivos, secciones dentro de la misma página o direcciones de correo electrónico. Los enlaces pueden contener texto o imágenes y suelen ser interactivos, cambiando de apariencia cuando el usuario pasa el cursor sobre ellos.
+            El atributo más común del &lt;a&gt; es href, que define el destino del enlace. Otros atributos, como target, title y download, agregan funcionalidades adicionales, como abrir el enlace en una nueva pestaña, mostrar un texto emergente o descargar archivos.    
+            En resumen, el &lt;a&gt; es una herramienta versátil y fundamental para la navegación en la web.
+            A continuacion mostraremos ejemplos de su uso con distintos atributos:
+        </p>
+
+        <h2>href</h2>
+        <p>El atributo href es el más importante, ya que define el destino del enlace.</p>
+        <img src="img1.png" alt="ejemplo1">
+
+        <h2>target</h2>
+        <p>El atributo target especifica dónde se abrirá el enlace. Puede ser en la misma pestaña o en una nueva pestaña.</p>
+        <img src="img2.png" alt="ejemplo2">
+
+        <h2>title</h2>
+        <p>El atributo title proporciona un texto que aparece cuando el usuario pasa el ratón sobre el enlace.</p>
+        <img src="img3.png" alt="ejemplo3">
+
+        <h2>download</h2>
+        <p>El atributo download permite que un enlace descargue un archivo en lugar de abrirlo.</p>
+        <img src="img4.png" alt="ejemplo4">
+
+        <h2>rel</h2>
+        <p>El atributo rel describe la relación entre el documento actual y el enlace. Se usa comúnmente con target="_blank" para mejorar la seguridad.</p>
+        <img src="img5.png" alt="ejemplo5">
+
+        <h2>hreflang</h2>
+        <p>El atributo hreflang indica el idioma del contenido del enlace. Es útil para motores de búsqueda.</p>
+        <img src="img6.png" alt="ejemplo6">
+
+        <h2>type</h2>
+        <p>El atributo type define el tipo de contenido del recurso vinculado. Es útil cuando enlazas a recursos multimedia o documentos.</p>
+        <img src="img7.png" alt="ejemplo7">
+
+        <h2>ping</h2>
+        <p>El atributo ping envía una solicitud cuando se hace clic en el enlace para rastrear la actividad del usuario. Se utiliza mayormente en análisis.</p>
+        <img src="img8.png" alt="ejemplo8">
+
+        <h2>referrerpolicy</h2>
+        <p>El atributo referrerpolicy controla cuánta información de referencia se envía al hacer clic en el enlace.</p>
+        <img src="img9.png" alt="ejemplo9">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
